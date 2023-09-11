@@ -162,7 +162,6 @@ const Tv = () => {
     ["tvShows", "trending"],
     getTvShows
   );
-  console.log(data);
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState(false);
 

@@ -38,8 +38,6 @@ const Search = () => {
     searchContents(keyword as string)
   );
 
-  console.log(data);
-
   return (
     <Container>
       <Viewer>

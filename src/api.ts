@@ -72,6 +72,18 @@ export function getMoives() {
   ).then((response) => response.json());
 }
 
+export function getPopularMoives() {
+  return fetch(
+    `${BASE_PATH}/movie/popular?api_key=${API_KEY}`
+  ).then((response) => response.json());
+}
+
+export function getTopRatedMovies(){
+  return fetch(
+    `${BASE_PATH}/movie/top_rated?api_key=${API_KEY}`
+  ).then((response) => response.json());
+}
+
 export function getTvShows() {
   return fetch(
     `${BASE_PATH}/trending/tv/day?api_key=${API_KEY}`
